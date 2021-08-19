@@ -1,0 +1,13 @@
+// 直向卷軸
+.offcanvas-body-scrollbar {
+  &::-webkit-scrollbar-track {
+    background-color: $white;
+  }
+  &::-webkit-scrollbar {
+    background-color: $white;
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+  }
+}

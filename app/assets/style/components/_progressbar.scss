@@ -1,0 +1,36 @@
+// 圓點式進度條
+.timeline--section {
+  position: relative;
+  margin: 30px 0;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $secondary;
+  }
+}
+.timeline--pointer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -30%);
+    background-color: $white;
+    border: 1px solid $secondary;
+    z-index: 1;
+  }
+  &--selected::before {
+    background-color: $secondary;
+  }
+}

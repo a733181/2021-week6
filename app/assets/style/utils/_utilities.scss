@@ -1,0 +1,21 @@
+.object-fit-cover {
+  object-fit: cover;
+}
+.imgHover {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.position-lg-absolute {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+  }
+}
+.translate-lg-middle {
+  @include media-breakpoint-up(lg) {
+    transform: translate(-50%, -50%);
+  }
+}
+.zindex-tooltip {
+  z-index: $zindex-tooltip;
+}

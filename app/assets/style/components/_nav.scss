@@ -1,0 +1,10 @@
+// 橫向卷軸
+.nav-scroll {
+  height: 2.75rem; /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+  & .nav {
+    padding-bottom: 1.5rem; /* 隱藏下方捲軸 */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
