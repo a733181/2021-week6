@@ -1,5 +1,5 @@
 // 圓點式進度條
-.timeline--section {
+.timeline-section {
   position: relative;
   margin: 30px 0;
   @include media-breakpoint-down(md) {
@@ -14,7 +14,7 @@
     background-color: $secondary;
   }
 }
-.timeline--pointer {
+.timeline-pointer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
     border: 1px solid $secondary;
     z-index: 1;
   }
-  &--selected::before {
+  &-selected::before {
     background-color: $secondary;
   }
 }
