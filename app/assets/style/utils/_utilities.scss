@@ -1,10 +1,8 @@
 .object-fit-cover {
   object-fit: cover;
 }
-.imgHover {
-  &:hover {
-    opacity: 0.6;
-  }
+.imgHover:hover {
+  opacity: 0.6;
 }
 .position-lg-absolute {
   @include media-breakpoint-up(lg) {
