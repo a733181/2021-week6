@@ -1,9 +1,26 @@
 "use strict";
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+var mySwiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  slidesPerColumn: 3,
   spaceBetween: 30,
-  initialSlide: 1,
-  centeredSlides: true
+  slidesPerColumnFill: "row",
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      spaceBetween: 30
+    },
+    960: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3.5,
+      slidesPerColumn: 1,
+      spaceBetween: 30
+    }
+  }
 });
 //# sourceMappingURL=all.js.map

@@ -14082,7 +14082,7 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
-.imgHover:hover {
+.hover:hover {
   opacity: 0.6;
 }
 
@@ -14098,6 +14098,14 @@ fieldset:disabled .btn {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+}
+
+.img-s {
+  height: 256px;
+}
+
+.img-m {
+  height: 559px;
 }
 
 .sIcon {
@@ -14172,6 +14180,10 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
+.card-img-s {
+  height: 120px;
+}
+
 .card-text-indent {
   text-indent: 2rem;
 }
@@ -14215,19 +14227,6 @@ fieldset:disabled .btn {
 .swiper-container {
   width: 100%;
   height: 100%;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 350px !important;
 }
 
 .banner {
