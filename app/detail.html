@@ -46,9 +46,9 @@ display: d-block
         <img
           src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
           alt="2020 台味設計展"
-          class="w-100 h-100 mb-2"
+          class="w-100 img-s object-fit-cover mb-2"
         />
-        <h3
+        <p
           class="
             position-absolute
             top-50
@@ -62,18 +62,18 @@ display: d-block
           "
         >
           01<br />JUN<br />|<br />31<br />OCT
-        </h3>
+        </p>
       </div>
       <div class="d-flex align-items-center mb-1">
         <h2 class="fw-6 fw-bold me-2">2020 台味設計展</h2>
         <img
           src="./assets/images/facebook.svg"
           alt="facebook"
-          class="sIcon mb-2 imgHover"
+          class="sIcon mb-2 hover"
         />
-        <h3 class="fw-bold d-sm-block d-md-none fs-7 ms-auto mb-2">
+        <p class="fw-bold d-sm-block d-md-none fs-8 ms-auto mb-1">
           01 JUN — 31 OCT
-        </h3>
+        </p>
       </div>
       <p class="mb-0">
         一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
@@ -109,26 +109,27 @@ display: d-block
         "
       >
         <!-- 張數 -->
-        <ul
+        <div
           class="
             list-unstyled
             d-flex
             justify-content-center
             text-center
             mb-9 mb-lg-0
+            me-lg-9
           "
         >
-          <li>
-            <a href="#" class="fs-1 fw-bold me-9">-</a>
-          </li>
-          <li class="me-9">
+          <a href="#" class="fs-1 fw-bold me-9"
+            ><span class="material-icons"> remove </span></a
+          >
+          <div class="me-9">
             <p class="fs-1 fw-bold">01</p>
             <p>張</p>
-          </li>
-          <li>
-            <a href="#" class="fs-1 fw-bold">+</a>
-          </li>
-        </ul>
+          </div>
+          <a href="#" class="fs-1 fw-bold"
+            ><span class="material-icons"> add </span></a
+          >
+        </div>
         <!-- 票價 -->
         <div class="text-center mb-9 mb-lg-0">
           <h3 class="fs-1 mb-6">NT$350</h3>
@@ -158,34 +159,28 @@ display: d-block
     </div>
   </div>
   <!--藝饗宴  -->
-  <div class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-12 order-2 order-lg-1">
-        <!-- banner -->
-        <div class="standard bg-cover mb-8"></div>
-      </div>
-      <div class="col-md-12 col-lg-4 order-3 order-lg-2">
-        <img
-          src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
-          alt="藝饗宴"
-          class="w-100 h-100"
-        />
-      </div>
-      <div class="col-md-8 order-1 order-lg-3 mb-5 mb-lg-0">
-        <div class="card-body">
-          <h2 class="card-title fw-bold fs-6">藝饗宴</h2>
-          <h3 class="card-title fs-6">​Celebration of Style and Art</h3>
-          <p class="card-text-indent card-text text-gray">
-            匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
-          </p>
-          <p class="card-text text-gray">
-            從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
-            等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
-            NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
-            的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。
-          </p>
-        </div>
-      </div>
+  <div class="row g-0">
+    <!-- banner -->
+    <div class="standard bg-cover order-2 order-lg-1 mb-8"></div>
+    <div class="col-lg-4 order-3 order-lg-2">
+      <img
+        src="./assets/images/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
+        alt="藝饗宴"
+        class="w-100 img-m"
+      />
+    </div>
+    <div class="col-md-8 order-1 order-lg-3 mb-5 mb-lg-0 ps-lg-8">
+      <h2 class="fw-bold fs-6">藝饗宴</h2>
+      <h3 class="fs-6">​Celebration of Style and Art</h3>
+      <p class="text-gray">
+        匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
+      </p>
+      <p class="text-gray">
+        從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
+        等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
+        NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
+        的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。
+      </p>
     </div>
   </div>
 </div>
